@@ -1,0 +1,232 @@
+// Purdue-inspired color palette
+$purdue-black: #000000;
+$purdue-gold: #cfb991;
+$purdue-white: #ffffff;
+$purdue-light: #f7f7f7;
+$purdue-gray: #5a5a5a;
+$purdue-border: #e6e6e6;
+
+// Spacing and shape
+$radius: 0.75rem;
+$shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+$hover-shadow: 0 14px 28px rgba(0, 0, 0, 0.14);
+$transition: all 0.25s ease-in-out;
+
+body {
+  font-family: "Montserrat", "Arial", sans-serif;
+  background: $purdue-light;
+  color: $purdue-black;
+}
+
+// Navbar
+.navbar {
+  background: $purdue-black;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+
+  .navbar-brand {
+    color: $purdue-gold !important;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+
+    img {
+      height: 40px;
+      width: auto;
+      margin-right: 0.75rem;
+    }
+  }
+
+  .nav-link {
+    color: $purdue-white !important;
+    font-weight: 500;
+
+    &:hover,
+    &:focus {
+      color: $purdue-gold !important;
+    }
+  }
+}
+
+// Hero section
+.hero-section {
+  padding: 3rem 0 2rem;
+  text-align: center;
+
+  h1,
+  h2 {
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .lead {
+    max-width: 700px;
+    margin: 0 auto;
+    color: $purdue-gray;
+  }
+}
+
+// Major cards
+.major-card {
+  border: 1px solid $purdue-border;
+  border-radius: $radius;
+  overflow: hidden;
+  background: $purdue-white;
+  box-shadow: $shadow;
+  transition: $transition;
+  font-family: "Source Serif Pro";
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: $hover-shadow;
+  }
+
+  .card-img-top {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+
+  .card-body {
+    padding: 1.25rem;
+  }
+
+  .card-title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-text {
+    color: $purdue-gray;
+    font-size: 0.95rem;
+  }
+}
+
+// Purdue button styling
+.btn-purdue {
+  background: $purdue-black;
+  color: $purdue-white;
+  border: 1px solid $purdue-black;
+  font-weight: 700;
+  font-family: "Acumin Pro";
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.4rem;
+  transition: $transition;
+
+  &:hover {
+    background: $purdue-gold;
+    color: $purdue-black;
+    border-color: $purdue-gold;
+  }
+}
+
+// Quiz callout section
+.quiz-callout {
+  background: linear-gradient(135deg, $purdue-black, #1d1d1d);
+  color: $purdue-white;
+  border-radius: $radius;
+  padding: 2rem;
+  box-shadow: $shadow;
+
+  p {
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  .btn {
+    margin-top: 0.75rem;
+  }
+}
+
+// Modal styling
+.modal-content {
+  border-radius: $radius;
+  border: none;
+  overflow: hidden;
+  box-shadow: $shadow;
+}
+
+.modal-header {
+  background: $purdue-black;
+  color: $purdue-white;
+  border-bottom: 4px solid $purdue-gold;
+
+  .btn-close {
+    filter: invert(1);
+  }
+}
+
+.modal-body {
+  background: $purdue-white;
+  color: $purdue-black;
+}
+
+.modal-footer {
+  background: $purdue-light;
+}
+
+// Course list styling
+.course-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+
+  li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid $purdue-border;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+// Job cards
+.job-card {
+  border: 1px solid $purdue-border;
+  border-radius: $radius;
+  box-shadow: $shadow;
+  transition: $transition;
+  background: $purdue-white;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: $hover-shadow;
+  }
+
+  .card-title {
+    color: $purdue-black;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+  }
+
+  .card-text {
+    color: $purdue-gray;
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 2rem 0 1rem;
+
+    h1,
+    h2 {
+      font-size: 1.8rem;
+    }
+  }
+
+  .major-card {
+    &:hover {
+      transform: none;
+    }
+  }
+
+  .navbar-brand img {
+    height: 32px;
+  }
+}
+

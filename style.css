@@ -1,0 +1,183 @@
+body {
+  font-family: "Montserrat", "Arial", sans-serif;
+  background: #f7f7f7;
+  color: #000000;
+}
+
+.navbar {
+  background: #000000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+.navbar .navbar-brand {
+  color: #cfb991 !important;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+.navbar .navbar-brand img {
+  height: 40px;
+  width: auto;
+  margin-right: 0.75rem;
+}
+.navbar .nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+}
+.navbar .nav-link:hover, .navbar .nav-link:focus {
+  color: #cfb991 !important;
+}
+
+.hero-section {
+  padding: 3rem 0 2rem;
+  text-align: center;
+}
+.hero-section h1,
+.hero-section h2 {
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.hero-section .lead {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #5a5a5a;
+}
+
+.major-card {
+  border: 1px solid #e6e6e6;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.25s ease-in-out;
+  font-family: "Source Serif Pro";
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.major-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.14);
+}
+.major-card .card-img-top {
+  aspect-ratio: 4/3;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.major-card .card-body {
+  padding: 1.25rem;
+}
+.major-card .card-title {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+.major-card .card-text {
+  color: #5a5a5a;
+  font-size: 0.95rem;
+}
+
+.btn-purdue {
+  background: #000000;
+  color: #ffffff;
+  border: 1px solid #000000;
+  font-weight: 700;
+  font-family: "Acumin Pro";
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.4rem;
+  transition: all 0.25s ease-in-out;
+}
+.btn-purdue:hover {
+  background: #cfb991;
+  color: #000000;
+  border-color: #cfb991;
+}
+
+.quiz-callout {
+  background: linear-gradient(135deg, #000000, #1d1d1d);
+  color: #ffffff;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+.quiz-callout p {
+  color: rgba(255, 255, 255, 0.85);
+}
+.quiz-callout .btn {
+  margin-top: 0.75rem;
+}
+
+.modal-content {
+  border-radius: 0.75rem;
+  border: none;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.modal-header {
+  background: #000000;
+  color: #ffffff;
+  border-bottom: 4px solid #cfb991;
+}
+.modal-header .btn-close {
+  filter: invert(1);
+}
+
+.modal-body {
+  background: #ffffff;
+  color: #000000;
+}
+
+.modal-footer {
+  background: #f7f7f7;
+}
+
+.course-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.course-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e6e6e6;
+}
+.course-list li:last-child {
+  border-bottom: none;
+}
+
+.job-card {
+  border: 1px solid #e6e6e6;
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.25s ease-in-out;
+  background: #ffffff;
+}
+.job-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.14);
+}
+.job-card .card-title {
+  color: #000000;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+.job-card .card-text {
+  color: #5a5a5a;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 2rem 0 1rem;
+  }
+  .hero-section h1,
+  .hero-section h2 {
+    font-size: 1.8rem;
+  }
+  .major-card:hover {
+    transform: none;
+  }
+  .navbar-brand img {
+    height: 32px;
+  }
+}/*# sourceMappingURL=style.css.map */

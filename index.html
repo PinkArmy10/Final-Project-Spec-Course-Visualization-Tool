@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Visualization Tool</title>
+    <link rel="icon" type="image/png" href="Signature Logo/RGB/PNGs/PU-P-only.png">
+    <!--  Bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--  SCSS -->
+    <link href="style.css" rel="stylesheet">
+    <!--  JavaScript Dataset -->
+    <script src="MajorRequirements.js" defer></script>
+    <script src="QuizData.js" defer></script>
+    <!--  JavaScript Modals -->
+    <script src="modals.js" defer></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="Signature Logo/RGB/PNGs/PU-H-Full-Rev-RGB.png" alt="Purdue Logo" width="30" height="30" class="d-inline-block align-text-top me-2">
+                Purdue ACC
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Quiz Hero Section -->
+    <div class="container my-5 text-center">
+        <h2>Unsure which path is right for you?</h2>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#quizModal">Take the Quiz</button>
+    </div>
+
+    <!-- Main Grid -->
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/animation-visual-effects.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Animation and Visual Effects</h5>
+                        <p>Enhance entertainment and film videos by combining real and virtual actors and settings.</p>
+                        <button class="btn btn-purdue" data-bs-toggle="modal" data-bs-target="#dataModal" data-major="Animation">
+                            Required classes for this Major
+                        </button>
+                    </div>
+                </div>
+            </div>
+             <div class="col">
+                <div class="card h-100">
+                    <img src="img/Computer-Info-Tech.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Computer and Information Technology</h5>
+                        <p> Keep your employer’s systems functioning efficiently and their data safe as you manage applications, databases and networks.</p>
+                        <button class="btn btn-purdue" data-bs-toggle="modal" data-bs-target="#dataModal" data-major="CIT">
+                            Required classes for this Major
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/network-engineering-technology-degree-purdue.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Computing Infrastructure and Network Engineering Technology</h5>
+                        <p>Focus on high-level computer network design with a foundation in hardware and software to manage networks and solve networking challenges.</p>
+                        <button class="btn btn-purdue" data-bs-toggle="modal" data-bs-target="#dataModal" data-major="CINET">
+                            Required classes for this Major
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/cybersecurity-degree-purdue.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Cybersecurity</h5>
+                        <p>Learn to create and maintain secure networks and ways to track down hackers who aim to breach that security.</p>
+                        <button class="btn btn-purdue" data-bs-toggle="modal" data-bs-target="#dataModal" data-major="Cybersecurity">
+                            Required classes for this Major
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/data-analytics-major-purdue.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Analytics, Technologies and Applications</h5>
+                        <p>Leverage statistical and machine learning techniques by applying and evaluating database analytics approaches, techniques and tools to solve problems.</p>
+                        <button class="btn btn-purdue" data-bs-toggle="modal" data-bs-target="#dataModal" data-major="DATA">
+                            Required classes for this Major
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/game-design-major-purdue.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Game Development</h5>
+                        <p>Bring virtual worlds to life in industries that include education, health care, science, research, employee training and, of course, gaming!</p>
+                        <button class="btn btn-purdue" data-bs-toggle="modal" data-bs-target="#dataModal" data-major="GameDevelopment">
+                            Required classes for this Major
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/themed-entertainment-experiences-purdue.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Themed Entertainment Design</h5>
+                        <p>Build the future of theme parks, museums and beyond with immersive experiences across digital, physical, and virtual worlds.</p>
+                        <button class="btn btn-purdue" data-bs-toggle="modal" data-bs-target="#dataModal" data-major="ThemedEntertainmentDesign">
+                            Required classes for this Major
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/ux-design-major-purdue.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">UX Design</h5>
+                        <p>User experience (UX) designers incorporate customer feedback to research end users’ needs and brainstorm solutions that help them navigate products.</p>
+                        <button class="btn btn-purdue" data-bs-toggle="modal" data-bs-target="#dataModal" data-major="UXDesign">
+                            Required classes for this Major
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/web-programming-major-purdue.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Web Programming and Design</h5>
+                        <p>Build secure, user-friendly web apps, such as information storage/retrieval programs and financial transactions, using PHP, MySQL and ASP.</p>
+                        <p>The best Major here!</p>
+                        <button class="btn btn-purdue" data-bs-toggle="modal" data-bs-target="#dataModal" data-major="WebProgrammingDesign">
+                            Required classes for this Major
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jobs Section -->
+    <div class="container my-5">
+        <div class="quiz-callout mb-4">
+            <h2 class="mb-2">Example Jobs After These Programs</h2>
+            <p class="mb-0">These careers match the majors on this page.</p>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
+            <div class="card job-card h-100">
+                <div class="card-body">
+                <h5 class="card-title">Web Developer</h5>
+                <p class="card-text">Build and maintain websites and web applications.</p>
+                <span class="badge bg-dark">Web Programming & Design</span>
+                </div>
+            </div>
+            </div>
+
+            <div class="col">
+            <div class="card job-card h-100">
+                <div class="card-body">
+                <h5 class="card-title">Front-End Developer</h5>
+                <p class="card-text">Create the interactive and visual parts of websites.</p>
+                <span class="badge bg-dark">Web Programming & Design</span>
+                </div>
+            </div>
+            </div>
+
+            <div class="col">
+            <div class="card job-card h-100">
+                <div class="card-body">
+                <h5 class="card-title">UX/UI Designer</h5>
+                <p class="card-text">Improve usability and design clean user interfaces.</p>
+                <span class="badge bg-dark">UX Design</span>
+                </div>
+            </div>
+            </div>
+
+            <div class="col">
+            <div class="card job-card h-100">
+                <div class="card-body">
+                <h5 class="card-title">Full-Stack Developer</h5>
+                <p class="card-text">Work on both front-end and back-end systems.</p>
+                <span class="badge bg-dark">Web Programming & Design</span>
+                </div>
+            </div>
+            </div>
+
+            <div class="col">
+            <div class="card job-card h-100">
+                <div class="card-body">
+                <h5 class="card-title">Database Administrator</h5>
+                <p class="card-text">Manage data systems used by web applications.</p>
+                <span class="badge bg-dark">CIT / DATA</span>
+                </div>
+            </div>
+            </div>
+
+            <div class="col">
+            <div class="card job-card h-100">
+                <div class="card-body">
+                <h5 class="card-title">Cybersecurity Analyst</h5>
+                <p class="card-text">Protect systems, networks, and web applications from attacks.</p>
+                <span class="badge bg-dark">Cybersecurity</span>
+                </div>
+            </div>
+            </div>
+
+            <div class="col">
+            <div class="card job-card h-100">
+                <div class="card-body">
+                <h5 class="card-title">Network Administrator</h5>
+                <p class="card-text">Set up and maintain network systems and infrastructure.</p>
+                <span class="badge bg-dark">CINET</span>
+                </div>
+            </div>
+            </div>
+
+            <div class="col">
+            <div class="card job-card h-100">
+                <div class="card-body">
+                <h5 class="card-title">Game Designer</h5>
+                <p class="card-text">Design game mechanics, systems, and player experiences.</p>
+                <span class="badge bg-dark">Game Development</span>
+                </div>
+            </div>
+            </div>
+
+            <div class="col">
+            <div class="card job-card h-100">
+                <div class="card-body">
+                <h5 class="card-title">Animation Artist</h5>
+                <p class="card-text">Create motion graphics, 3D visuals, and visual effects.</p>
+                <span class="badge bg-dark">Animation</span>
+                </div>
+            </div>
+            </div>
+
+            <div class="col">
+            <div class="card job-card h-100">
+                <div class="card-body">
+                <h5 class="card-title">Experience Designer</h5>
+                <p class="card-text">Build immersive exhibits, attractions, and themed spaces.</p>
+                <span class="badge bg-dark">Themed Entertainment Design</span>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Modals -->
+
+    <!-- Data Modal -->
+    <div class="modal fade" id="dataModal" tabindex="-1" aria-labelledby="dataModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="dataModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Accordion -->
+                    <div class="accordion" id="accordionMajorInfo">
+                        <!-- Items injected by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Quiz -->
+    <div class="modal fade" id="quizModal" tabindex="-1" aria-labelledby="quizModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="quizModalLabel">Program Quiz</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="quizQuestion" class="mb-3 fw-semibold"></div>
+                    <div id="quizOptions" class="d-grid gap-2"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="quizPrev">Previous</button>
+                    <button type="button" class="btn btn-primary" id="quizNext" disabled>Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
