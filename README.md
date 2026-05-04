@@ -15,6 +15,9 @@ The hamburger menu is implemented with Bootstrap’s navbar collapse component. 
 ## Favicon
 The favicon used in this project is a Purdue-themed icon that matches the overall content and branding of the site. I added it in the `<head>` section so the browser tab displays a small Purdue-related image. This helps the site look more polished and recognizable.
 
+## Images
+All images used in this project were sourced from Purdue’s official websites, including the Applied & Creative Computing site and the Purdue Branding Guide. The fonts and colors used in the project were also based on Purdue’s branding guidelines to keep the design consistent with the university’s visual identity.
+
 ## Bootstrap Features Used
 This project uses several Bootstrap features:
 - Navbar: for the responsive navigation bar.
@@ -35,6 +38,3 @@ The quiz shows one question at a time and stores the selected major for each ans
 
 ## Jobs Section
 The jobs section gives examples of careers related to the majors on the page. Each card includes a job title, a short description, and a badge that shows which major it connects to. This makes the section more useful because it links careers directly to the program choices.
-
-## Notes
-This project was designed to look professional, work well on different screen sizes, and provide a clear way for users to explore Purdue majors and related career paths.
